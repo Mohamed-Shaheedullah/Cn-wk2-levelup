@@ -56,3 +56,31 @@ saurus_dicosaurs_2 = [dino for dino in dinosaurs if "saurus" in dino]
 print(saurus_dicosaurs_2)
 
 
+## tuples
+
+coffee_oder = (
+    "Alex - Cortado",
+    "Ben - Latte",
+    "Charlie - Mocha"
+)
+
+## cannot sort or append
+
+## can count or index
+
+## try / except
+
+print("Type in two numbers to multiply")
+      
+while True:
+    try:
+        num1 = int(input("Number 1:   "))
+        num2 = int(input("Number 2:   "))
+        break
+#    except:
+    except ValueError:
+        print("please use integers only!")
+
+print(num1 * num2)
+
+
