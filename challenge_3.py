@@ -35,6 +35,7 @@ balance = 500
 
 
 def cash_machine():
+    global balance
     pin_flag = False
     while pin_flag == False:
         pin_try = int(input("Enter your pin   "))
@@ -49,6 +50,9 @@ def cash_machine():
             print("you cannot exceed your balance") 
         else:
             cash_flag = True
+            balance = balance - cash_amount
+            print(f"new balance =  {balance}")
+
 
     # print("Please use integers only")
 
